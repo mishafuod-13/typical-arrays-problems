@@ -28,7 +28,8 @@ exports.avg = function avg (array) {
     return 0;
   }
   let sum = array.reduce(function(prevval, current) {
-    return prevval + current;
-    });
-    return sum/2;
-}
+    return (prevval + current);
+    },0);
+
+  return sum/array.length;
+ }
